@@ -1,7 +1,17 @@
 <div *ngIf="profile">
   <div class="panel panel-default">
-    <div class="panel-heading"></div>
+    <div class="panel-heading">
+      {{profie.name}} <small>{{profile.login}}</small>
+    <span *ngIf="profile.company">,  Works at{{profile.company}}</span>
+    {{profile.location}}
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{profile.avatar_url}}" alt="">
 
+        </div>
+      </div>
+    </div>
   </div>
-
 </div>

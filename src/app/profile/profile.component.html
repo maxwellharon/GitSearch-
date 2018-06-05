@@ -18,20 +18,20 @@
         <div class="col-sm-5">
           <ul class="list-group">
             <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-              <li class="list-group-item" *ngIf="profile.hirable">Available for hire </li>
-                <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
-                  <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
-                  </ul>
-                </div>
+            <li class="list-group-item" *ngIf="profile.hirable">Available for hire </li>
+            <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
+            <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+          </ul>
+        </div>
                 <div class="col-sm-4">
                   <p>
-                    <span class="label label-default">{{profile.followers}}Followers</span>
-                    <span class="label label-default">{{profile.following}}Following</span>
-                    <span class="label label-default">{{profile.public_gists}}Public gists</span>
+                    <span class="label label-primary">{{profile.followers}}Followers</span>
+                    <span class="label label-success">{{profile.following}}Following</span>
+                    <span class="label label-info">{{profile.public_gists}}Public gists</span>
                     <span class="label label-default">{{profile.public_repos}}Public Repos</span>
                   </p>
                   <p>
-                    <a href="{{profile.html_url}}" class="btn btn-success btn-sm">View profile on Github</a>
+                    <a href="{{profile.html_url}}" class="btn btn-warning btn-sm pull-right" target="_blank">View profile on Github</a>
                   </p>
                   <div class="panel panel-default">
                     <div class="panel-heading">

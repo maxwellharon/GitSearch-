@@ -2,7 +2,7 @@
 ## Maxwell Haron
 #### Git-Search is an angular based application that allows a user to search for Github users easily.
 #### The live link to Git-Search is https://maxwellharon.github.io/GitSearch-/GitSearch
- 3rd June 2018 10.13PM
+ 5th June 2018 5.40PM
 #### By **Maxwell Haron**
 ## Installation Requirements
 * A web browser is required to access the application since it is web based .

@@ -1,4 +1,7 @@
-<form action="" class="search-form">
+<h1>GitSearch :-)</h1>
+<!-- <img class="responsive-img" src="../../assets/download.jpg" alt="Gitsearch"> -->
+<form action="" class="search-form" class="card-panel teal lighten-2" >
+  <h5 class="black-text">To see Information regarding  a github user,Please input their name in the text field below</h5>
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
   </div>
@@ -13,7 +16,7 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-sm-3">
-          <img src="{{profile.avatar_url}}" class="img-circle img-responsive"alt="Profile Image">
+
         </div>
         <div class="col-sm-5">
           <ul class="list-group">
@@ -25,13 +28,13 @@
         </div>
                 <div class="col-sm-4">
                   <p>
-                    <span class="label label-primary">{{profile.followers}}Followers</span>
-                    <span class="label label-success">{{profile.following}}Following</span>
-                    <span class="label label-info">{{profile.public_gists}}Public gists</span>
-                    <span class="label label-default">{{profile.public_repos}}Public Repos</span>
+                    <button class="btn btn-default btn-sm" class="btn pulse btn red">{{profile.public_repos}}Public Repos</button>
+                    <button class="btn btn-primary btn-sm" class="btn pulse btn orange">{{profile.followers}}Followers</button>
+                    <button class="btn btn-success btn-sm" class="btn pulse btn green" >{{profile.following}}Following</button>
+                    <button class="btn btn-info btn-sm" class="btn pulse  btn-large cyan pulse" >{{profile.public_gists}}Public gists</button>
                   </p>
                   <p>
-                    <a href="{{profile.html_url}}" class="btn btn-warning btn-sm pull-right" target="_blank">View profile on Github</a>
+                    <a href="{{profile.html_url}}" class="btn btn-warning btn-sm pull-right" target="_blank" class="btn pulse">View profile on Github</a>
                   </p>
                   <div class="panel panel-default">
                     <div class="panel-heading">

@@ -9,6 +9,7 @@
 * Internet connection
 * Terminal if you want to access the app locally through your computer
 #### Development server
+#### Installation Requirements
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Known Bugs

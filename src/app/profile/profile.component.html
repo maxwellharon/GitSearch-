@@ -16,7 +16,7 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-sm-3">
-
+           <img src= "{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
         </div>
         <div class="col-sm-5">
           <ul class="list-group">
@@ -29,9 +29,9 @@
                 <div class="col-sm-4">
                   <p>
                     <button class="btn btn-default btn-sm" class="btn pulse btn red">{{profile.public_repos}}Public Repos</button>
-                    <button class="btn btn-primary btn-sm" class="btn pulse btn orange">{{profile.followers}}Followers</button>
-                    <button class="btn btn-success btn-sm" class="btn pulse btn green" >{{profile.following}}Following</button>
-                    <button class="btn btn-info btn-sm" class="btn pulse  btn-large cyan pulse" >{{profile.public_gists}}Public gists</button>
+                    <button class="btn btn-primary btn-sm" class=" btn orange">{{profile.followers}}Followers</button>
+                    <button class="btn btn-success btn-sm" class=" btn green" >{{profile.following}}Following</button>
+                    <button class="btn btn-info btn-sm" class="  btn-large cyan pulse" >{{profile.public_gists}}Public gists</button>
                   </p>
                   <p>
                     <a href="{{profile.html_url}}" class="btn btn-warning btn-sm pull-right" target="_blank" class="btn pulse">View profile on Github</a>

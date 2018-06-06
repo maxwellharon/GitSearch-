@@ -1,7 +1,7 @@
 <h1>GitSearch :-)</h1>
 <!-- <img class="responsive-img" src="../../assets/download.jpg" alt="Gitsearch"> -->
 <form action="" class="search-form" class="card-panel teal lighten-2" >
-  <h5 class="black-text">To see Information regarding  a github user,Please input their name in the text field below</h5>
+  <h5 class="black-text">Search Github username to get more info :-)</h5>
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
   </div>
@@ -16,7 +16,7 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-sm-3">
-           <img src= "{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
+           <img src= "{{profile.avatar_url}}" class="responsive-img circle responsive-img" alt="Profile Image">
         </div>
         <div class="col-sm-5">
           <ul class="list-group">
